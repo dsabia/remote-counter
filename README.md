@@ -8,8 +8,6 @@
 
 #### Notes
 
-Here, few some answare:
-
 ###### Programming language
 Java
 

@@ -6,6 +6,20 @@
 > failures, and a database should not be used. You may use whatever libraries or frameworks you deem fit to assist you in the task.
 > A command line interface is sufficient.
 
+#### Installation
+1. from main root, execute command
+
+ > mvn clean compile
+ 
+2. on project **counter-server**, execute command
+
+ > mvn install
+ 
+3. on project **counter-client**, in another console, run
+
+ > mvn install
+
+
 #### Notes
 
 ###### Programming language
@@ -44,16 +58,15 @@ OO with some deign pattern:
 ######Test strategy 
 *...in progress*
 
-third party library integration not suggest a fast way to test but more the use of some framework and mock. Mainly is to test configuration.
+For intense use of third party library, it is suggest to use Arqillian to test some caches configuration.
 
 #####Anything else
 
 ######Known issue
 * Still not working the failure recovery on Windows: probably test not passed.
-* For **counter-server** project wrong directory name
+* **counter-serever** project name is wrong directory name
  
 ######TODO
 * properties file for the confiuration
 * improve log
-* found a way to test client and server working togheter (inproject for Acceptance Test)
 

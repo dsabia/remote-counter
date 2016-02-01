@@ -37,8 +37,8 @@ OO with some deign pattern:
 * Socket
 
 ######Architecture
-1. client server architecture (simple socket sender->receiver) on *localhost:4444*
-2. distribuite cluster cache among nodes *[localhost:11111-localhost:11110]*
+1. client server architecture (simple socket sender->receiver) on **localhost:4444**
+2. distribuite cluster cache among nodes **[localhost:11111-localhost:11110]**
 
 ######Optimisations
 1. Separation of cluster and socket, for improve testing
@@ -54,6 +54,7 @@ third party library integration not suggest a fast way to test but more the use 
 
 ######Known issue
 * Still not working the failure recovery on Windows: probably test not passed.
+* For counter-server project wrong directory name
  
 ######TODO
 * properties file for the confiuration

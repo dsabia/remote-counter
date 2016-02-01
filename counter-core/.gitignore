@@ -1,3 +1,6 @@
 /target/
 /bin/
 /jcs_swap/
+/.settings/
+/.classpath
+/.project

@@ -2,5 +2,7 @@
     <wb-module deploy-name="counter-core">
         <wb-resource deploy-path="/" source-path="/src/main/java"/>
         <wb-resource deploy-path="/" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/" source-path="/test/main/java"/>
+        <wb-resource deploy-path="/" source-path="/test/main/resources"/>
     </wb-module>
 </project-modules>

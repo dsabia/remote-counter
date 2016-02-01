@@ -1,20 +1,17 @@
 package it.dan.remotecounter.server;
 
-import it.dan.remotecounter.Constants;
+import java.util.HashMap;
+
+import org.apache.jcs.access.CacheAccess;
+import org.apache.log4j.Logger;
+
+import com.google.common.collect.Maps;
+
 import it.dan.remotecounter.REMOTE_COUNTER_OPERATIONS;
 import it.dan.remotecounter.server.command.AbstractCounterCommand;
 import it.dan.remotecounter.server.command.DecrementCounterCommand;
 import it.dan.remotecounter.server.command.GetCounterCommand;
 import it.dan.remotecounter.server.command.IncrementCounterCommand;
-
-import java.util.HashMap;
-import java.util.concurrent.atomic.AtomicLong;
-
-import org.apache.jcs.access.CacheAccess;
-import org.apache.jcs.access.exception.CacheException;
-import org.apache.log4j.Logger;
-
-import com.google.common.collect.Maps;
 
 public class RemoteCounterFactory<T>{
 	

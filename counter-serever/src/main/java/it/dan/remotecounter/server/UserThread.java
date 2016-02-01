@@ -13,7 +13,7 @@ import org.apache.jcs.access.CacheAccess;
 import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
 
-public class UserThread extends Thread {
+public class UserThread implements Runnable {
 
 	private Socket connection;
 	private EventBus channel;

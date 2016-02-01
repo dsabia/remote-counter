@@ -1,8 +1,5 @@
 package it.dan.remotecounter.server;
 
-import it.dan.remotecounter.Constants;
-import it.dan.remotecounter.cache.CacheUtil;
-
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -11,6 +8,9 @@ import org.apache.jcs.access.CacheAccess;
 import org.apache.log4j.Logger;
 
 import com.google.common.eventbus.EventBus;
+
+import it.dan.remotecounter.Constants;
+import it.dan.remotecounter.cache.CacheUtil;
 
 public class Server {
 
@@ -30,7 +30,7 @@ public class Server {
 				Socket connection = socket.accept();
 				UserThread newUser = new UserThread(connection, channel, cache);
 				channel.register(newUser);
-				newUser.start();
+				new Thread(newUser).start();
 			}
 
 		} catch (IOException e) {

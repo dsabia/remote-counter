@@ -69,4 +69,4 @@ For intense use of third party library, it is suggest to use Arqillian to test s
 ######TODO
 * properties file for the confiuration
 * improve log
-
+* continue the cleanup for the dirty eclipse generated file

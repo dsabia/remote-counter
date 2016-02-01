@@ -10,22 +10,18 @@
 
 Here, few some answare:
 
-###### programming language
+###### Programming language
 Java
 
-###### programming paradigms
+###### Programming paradigms
 OO with some deign pattern:
 
 1. Command
-
 2. Factory
-
 3. EventBus 
-
 4. Publish–Subscribe
 
-
-###### libraries
+###### Libraries
 * JCS: java cache system for Lateral TCP Cache
 * Guava
 * Junit
@@ -54,7 +50,7 @@ third party library integration not suggest a fast way to test but more the use 
 
 ######Known issue
 * Still not working the failure recovery on Windows: probably test not passed.
-* For counter-server project wrong directory name
+* For **counter-server** project wrong directory name
  
 ######TODO
 * properties file for the confiuration

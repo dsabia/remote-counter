@@ -25,6 +25,7 @@ OO with some deign pattern:
 * Junit
 
 ######Frameworks
+*ops, no spring!*
 
 ######Protocols
 * Lateral TCP Cache
@@ -39,8 +40,9 @@ OO with some deign pattern:
 
 ######Coding style
 
+
 ######Test strategy 
-...in progress
+*...in progress*
 
 third party library integration not suggest a fast way to test but more the use of some framework and mock. Mainly is to test configuration.
 

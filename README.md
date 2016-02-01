@@ -8,34 +8,55 @@
 
 #### Notes
 
+Here, few some answare:
+
 ###### programming language
 Java
 
 ###### programming paradigms
-OO
+OO with some deign pattern:
+
+1. Command
+
+2. Factory
+
+3. EventBus 
+
+4. Publish–Subscribe
+
 
 ###### libraries
-JCS: java cache system for Lateral TCP Cache
-Guava
+* JCS: java cache system for Lateral TCP Cache
+* Guava
+* Junit
 
 ######Frameworks
 
 ######Protocols
-Lateral TCP Cache
-Socket
+* Lateral TCP Cache
+* Socket
 
 ######Architecture
-1. client server architecture (simple socket sender->receiver) on localhost:4444 
-2. distribuite cluster cache among nodes [localhost:11111-localhost:11110]
+1. client server architecture (simple socket sender->receiver) on *localhost:4444*
+2. distribuite cluster cache among nodes *[localhost:11111-localhost:11110]*
 
 ######Optimisations
+1. Separation of cluster and socket, for improve testing
 
 ######Coding style
 
 ######Test strategy 
 ...in progress
 
-######Anything else
+third party library integration not suggest a fast way to test but more the use of some framework and mock. Mainly is to test configuration.
+
+#####Anything else
 
 ######Known issue
-* Still not working the failure recovery on Windows
+* Still not working the failure recovery on Windows: probably test not passed.
+ 
+######TODO
+* properties file for the confiuration
+* improve log
+* found a way to test client and server working togheter (inproject for Acceptance Test)
+
